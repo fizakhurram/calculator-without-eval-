@@ -22,7 +22,7 @@ function getNumber(num) {
         secondnumArray.push(num)
         secondNumber = Number(secondnumArray.join(''))//merge into one string
         Display.value = secondNumber
-        Display.value = firstNumber + " " + operation + " " + secondNumber;
+        // Display.value = firstNumber + " " + operation + " " + secondNumber;
     }
 
 }
@@ -30,11 +30,12 @@ function getOperator(op) {
     step = 2
     operation = op
     secondnumArray = []
+
 }
 
 function calculateEquals() {
     if (secondnumArray.length === 0) {
-        secondNumber = Number(Display.value) || 0;  // ✅ empty case handle
+        secondNumber = Number(Display.value) || 0;
     }
     if (operation === '+') {
         result = firstNumber + secondNumber
