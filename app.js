@@ -50,6 +50,10 @@ function calculateEquals() {
         result = firstNumber / secondNumber
         Display.value = result
     }
+    firstNumber = result
+    secondNumber = null
+    secondnumArray =[]
+    step =1
 
 
 }
